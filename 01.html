@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Adoption Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Pet Adoption</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#pets">Adoptable Pets</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Find Your Furry Friend</h1>
+      <p>Give a forever home to a lovable pet</p>
+      <button onclick="window.location.href='#pets'">View Pets</button>
+    </div>
+  </header>
+
+  <!-- Pet Gallery Section -->
+  <section id="pets">
+    <h2>Adoptable Pets</h2>
+    <div class="pet-gallery">
+      <div class="pet-card">
+        <img src="Pet_04.jpg" alt="Pet 1" />
+        <h3>Entertainment</h3>
+        <p>Golden Retriever, 3 years old</p>
+        <button onclick="window.location.href='adopt.html'">Adopt Me</button>
+      </div>
+      <div class="pet-card">
+        <img src="Pet Adoption_03.jpg" alt="Pet 2" />
+        <h3>Luna</h3>
+        <p>Tabby Cat, 2 years old</p>
+        <button onclick="window.location.href='adopt_02.html'">Adopt Me</button>
+      </div>
+      <div class="pet-card">
+        <img src="Pet Adoption_04.jpg" alt="Pet 3" />
+        <h3>Max</h3>
+        <p>Beagle, 4 years old</p>
+        <button onclick="window.location.href='adopt_03.html'">Adopt Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We are committed to helping pets find loving homes. Every pet in our shelter deserves a second chance, and we're here to make that happen.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pet Adoption Center. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

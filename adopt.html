@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adopt Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Pet Adoption</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pet Info Section -->
+  <main>
+    <section class="pet-detail">
+      <h1>Meet Entertainment</h1>
+      <img src="Pet Adoption_05.jpg" alt="Entertainment" />
+      <p>
+        Entertainment is a 3-year-old Golden Retriever looking for a loving home. He is playful, friendly, and loves long walks and cuddles.<br>
+        He's great with kids and other pets!
+      </p>
+    </section>
+
+    <!-- Adoption Form -->
+    <section class="adoption-form">
+      <h2>Fill Out Your Info to Adopt Entertainment</h2>
+      <form action="01.html" method="GET">
+        <input type="text" placeholder="Your Full Name" required />
+        <input type="email" placeholder="Your Email Address" required />
+        <input type="tel" placeholder="Your Phone Number" required />
+        <textarea placeholder="Why do you want to adopt Entertainment" rows="4" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+ 
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pet Adoption Center. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('adoptionForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+
+      alert(
+        `Thank you for applying to adopt Entertainment!\n\nHere is the information you submitted:\n\nName: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+      );
+    });
+    </script>
+
+</body>
+</html>
